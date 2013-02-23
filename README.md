@@ -2,11 +2,14 @@ A* Pathfinding
 =============
 An A* Pathfinding example
 
+
 What is it?
 ------------
 [A*](http://en.wikipedia.org/wiki/Pathfinding#A.2A_Algorithm) is a pathfinding algorithm often used in video games.
 In this example, the player can set a start and end point with the mouse. Between these points, a way with the least cost is calculated (each tile has different costs or may be unwalkable).
 Furthermore, an enemy is placed on the field and can be controlled with the arrow keys. Within its influence radius, the tiles get more expensive and therefore an other way might be chosen instead one leading through the enemy.
+
+![Screenshot](/docs/Icon.png?raw=true)
 
 Requirements
 ------------
