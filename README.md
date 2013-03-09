@@ -11,6 +11,13 @@ Furthermore, an enemy is placed on the field and can be controlled with the arro
 
 ![Screenshot](/docs/Icon.png?raw=true)
 
+How to play?
+------------
+* Begin by setting the start point. Move your mouse over the territory and click on the desired field. Note: black fields are considered unwalkable and can't be chosen as start or end point.
+* Next, position the end point by clicking on the desired field
+* The path with the lowest cost is calculated. The cost is determined by a heuristic considering the distance (horizontal or vertical moves count 1, diagonal moves 1.41), the cost multiplier of the field (1 = Street, 2 = Gras, 3 = Water) and the influence of the enemy (Pacman)
+* Use the arrow keys to navigate Pacman through the scene. The cheapest path is recalculated immediately on every move. This is because paths passing through the surrounding of Pacman have increased costs and may therefore be more expensive than a long way round
+
 Requirements
 ------------
 What you need for compiling:
