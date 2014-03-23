@@ -1,13 +1,9 @@
-A* Pathfinding
+A* Pathfinding Example
 =============
-An A* Pathfinding example
-
 
 What is it?
 ------------
-[A*](http://en.wikipedia.org/wiki/Pathfinding#A.2A_Algorithm) is a pathfinding algorithm often used in video games.
-In this example, the player can set a start and end point with the mouse. Between these points, a way with the least cost is calculated (each tile has different costs or may be unwalkable).
-Furthermore, an enemy is placed on the field and can be controlled with the arrow keys. Within its influence radius, the tiles get more expensive and therefore an other way might be chosen instead one leading through the enemy.
+[A*](http://en.wikipedia.org/wiki/Pathfinding#A.2A_Algorithm) is a pathfinding algorithm commonly used in video games. In this example, you choose the start and end point of the route first. The algorithm then finds the path with the least costs between these points, considering that each tile has different costs or may be even unwalkable. Furthermore, you're able to navigate Pacman accross the field. Paths that cross Pacman's near surroundings (i.e. within Pacman's influence radius) experience increased costs and may get more expensive than a longer way around Pacman. The algorithm therfore dynamically re-evaluates pathes that cross Pacman's influence radius and adapts the route as necessesary.
 
 ![Screenshot](/docs/Icon.png?raw=true)
 
